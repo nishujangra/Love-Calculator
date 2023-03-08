@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Smooch+Sans&family=Syne+Mono&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    color: #333;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.love form {
+    display: flex;
+    flex-direction: column;
+}
+
+#line {
+    width: 80vw;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+input,
+button {
+    width: 27vw;
+    height: 7vh;
+    border: 1px solid #ccc;
+    border-radius: .3em;
+    padding: 0 2vh;
+    margin-bottom: 2vh;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.result {
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border-radius: .5em;
+}
+
+.result p {
+    font-size: large;
+    padding: 1.5vh;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
+    font-family: 'Syne Mono', monospace;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    input,button{
+        width: 60vw;
+    }
+    #line{
+        padding: 2vh 0 5vh 0;
+    }
+    .result{
+        width: 60vw;
+    }
+}
